@@ -1,0 +1,77 @@
+section{
+    .parrafo-section{
+        display: inline-block;
+        p{
+            margin: 20px;
+            padding: 20px;
+            color: rgb(47, 44, 53);
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            top: 450px;
+            text-align: center;
+            font-size: 110%;
+            animation-duration: 3s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+        
+            -webkit-animation-duration: 3s;
+            -webkit-animation-name: aparecer;
+            -webkit-animation-iteration-count: infinite;
+        
+            -o-animation-duration: 3s;
+            -o-animation-name: aparecer;
+            -o-animation-iteration-count: infinite;
+        
+            -moz-animation-duration: 3s;
+            -moz-animation-name: aparecer;
+            -moz-animation-iteration-count: infinite;
+            @keyframes aparecer{
+                0%{
+                    opacity: 1;
+                }
+                50%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+                 }
+                 @-moz-keyframes  aparecer{
+                    0%{
+                        opacity: 1;
+                    }
+                    50%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+                @-o-keyframes  aparecer{
+                    0%{
+                        opacity: 1;
+                    }
+                    50%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+            }
+         }
+         @media only screen and (max-width: 400px) {
+            .parrafo-section{
+            
+                
+        
+            
+                p{
+                    
+                    font-size: 60%;
+                    margin: 10px;
+                }
+            }
+        }
+        
+}  

@@ -1,0 +1,115 @@
+@import "../base/variables";
+@import "../base/listas";
+@import "../base/operadores";
+.contactos-conteiner{
+    background-color: $bg-main;
+    width: 100%;
+    height: 900px;
+    .titulo-contactos{
+    display: flex;
+    justify-content: space-around;
+    h3{
+        letter-spacing: 1px;
+        color: nth($colores-fuentes, 1);
+        font-size: $tamaño-titulo *1;
+        text-decoration: underline;
+        background-color: $bg-main;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-top: 2rem; 
+    }
+    }
+    .cards-conteiner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        .cards{
+            width: 100%;
+            height: 240px;
+            margin: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: rgb(236, 230, 223);
+            .cards-image{
+                display: block;
+                margin: auto;
+                width: 90px;
+                height: auto;
+                color: nth($colores-fuentes, 1);
+            }
+            
+            h3{
+                text-align: center;
+                font-size: 150%;
+                font-weight: 1px;
+                color: nth($colores-fuentes, 1);
+                text-decoration: underline;
+            }
+            p{
+                text-align: center;
+                font-size: 120%;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: nth($colores-fuentes, 1);
+            }
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        .titulo-contactos{
+            h3{
+                font-size: 25px;
+            }
+        }
+        .cards-conteiner{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            .cards{
+                width: 85%;
+                height: 150px;
+                img{
+                    width: 60px;
+                    height: auto;
+                }
+                h3{
+                    font-size: 100%;
+                }
+                p{
+                    font-size: 90%;
+                }
+            }
+           
+           
+            
+           
+           
+
+        }
+    }
+    @media only screen and (min-width: 401px) and (max-width: 960px) {
+        .titulo-contactos{
+            h3{
+                font-size: 35px;
+            }
+        }
+        .cards-conteiner{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+          
+            .cards{
+                width: 90%;
+                height: 150px;
+                img{
+                    width: 60px;
+                    height: auto;
+                }
+                h3{
+                    font-size: 100%;
+                }
+                p{
+                    font-size: 90%;
+                }
+    }
+ }
+  }
+   }
