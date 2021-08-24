@@ -32,7 +32,7 @@ section{
     .nosotros-parrafo{
         display: flex;
     align-items: center;
-    margin-left: 5px;
+    margin-left: 1.5em;
     h1{
         letter-spacing: 1px;
         font-size: 100%;
@@ -40,7 +40,7 @@ section{
         line-height: 160%;
     }
     }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 960px) {
         .titulo-nosotros{
             h3{
                 font-size: 25px;
@@ -67,31 +67,31 @@ section{
         font-size: 70%;
         }  
    }
-   @media only screen and (min-width: 401px) and (max-width: 960px){
-       .titulo-nosotros{
-           h3{
-               font-size: 35px;
-           }
-       }
-    .grid-conteiner {
-        margin: 0 auto;
-        padding: 40px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 20px;
-    }
-    .grid-item img{
-        width: 100%;
-        height: auto;
+//    @media only screen and (min-width: 401px) and (max-width: 960px){
+//        .titulo-nosotros{
+//            h3{
+//                font-size: 35px;
+//            }
+//        }
+//     .grid-conteiner {
+//         margin: 0 auto;
+//         padding: 40px;
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         grid-template-rows: auto;
+//         gap: 1.4em;
+//     }
+//     .grid-item img{
+//         width: 100%;
+//         height: auto;
         
 
-    }
-    .nosotros-parrafo{
-        width: 100%;
-    }
-    .nosotros-parrafo p{
-    font-size: 70%;
-    }  
-   }
+//     }
+//     .nosotros-parrafo{
+//         width: 100%;
+//     }
+//     .nosotros-parrafo p{
+//     font-size: 70%;
+//     }  
+//    }
     }

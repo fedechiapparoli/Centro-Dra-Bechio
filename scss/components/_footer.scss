@@ -12,11 +12,13 @@
     }
     .parrafo-footer{
         color: nth($colores-fuentes, 2);
-        font-size: 90%;
+        font-size: 100%;
         text-align: center;
         margin: 10px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex;
+        margin-top: 2em;
+    
     }
     .redes-sociales{
        
