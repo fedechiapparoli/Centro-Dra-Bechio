@@ -17,7 +17,7 @@ header .nav-css li:hover {
   border-radius: 10px;
   transition: 1.5s;
 }
-header .nav-css .menu-letra {
+header .nav-css a {
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-transform: uppercase;
@@ -73,13 +73,13 @@ header .nav-css .logo-logo {
   }
 }
 
-section .conteiner-noticias .foto1, section .conteiner-noticias .foto {
+.conteiner-noticias .foto1, .conteiner-noticias .foto {
   width: 100%;
   height: auto;
   border: khaki 1px solid;
 }
 
-section .conteiner-noticias .texto, section .conteiner-noticias .texto1 {
+.conteiner-noticias .texto, .conteiner-noticias .texto1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   font-size: 120%;
@@ -88,7 +88,7 @@ section .conteiner-noticias .texto, section .conteiner-noticias .texto1 {
 section {
   background-color: aliceblue;
 }
-section .titulo-nosotros h3 {
+section h3 {
   text-align: center;
   letter-spacing: 1px;
   color: grey;
@@ -98,34 +98,38 @@ section .titulo-nosotros h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-top: 2rem;
 }
-section .grid-conteiner {
+
+.grid-conteiner {
   display: flex;
 }
-section .grid-conteiner .grid-item {
+.grid-conteiner .grid-item {
   display: flex;
 }
-section .grid-conteiner .grid-item img {
+.grid-conteiner .grid-item img {
   width: 100%;
   height: auto;
   border: navajowhite 1px solid;
   margin-bottom: 10px;
 }
-section .nosotros-parrafo {
+
+.nosotros-parrafo {
   display: flex;
   align-items: center;
   margin-left: 1.5em;
 }
-section .nosotros-parrafo h1 {
+.nosotros-parrafo h1 {
   letter-spacing: 1px;
   font-size: 100%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   line-height: 160%;
 }
+
 @media only screen and (max-width: 960px) {
-  section .titulo-nosotros h3 {
+  .titulo-nosotros h3 {
     font-size: 25px;
   }
-  section .grid-conteiner {
+
+  .grid-conteiner {
     margin: 0 auto;
     padding: 40px;
     display: grid;
@@ -133,25 +137,27 @@ section .nosotros-parrafo h1 {
     grid-template-rows: auto;
     gap: 20px;
   }
-  section .grid-item img {
+
+  .grid-item img {
     width: 100%;
     height: auto;
   }
-  section .nosotros-parrafo {
+
+  .nosotros-parrafo {
     width: 100%;
   }
-  section .nosotros-parrafo p {
+
+  .nosotros-parrafo p {
     font-size: 70%;
   }
 }
-
-section .conteiner-noticias .foto1, section .conteiner-noticias .foto {
+.conteiner-noticias .foto1, .conteiner-noticias .foto {
   width: 100%;
   height: auto;
   border: khaki 1px solid;
 }
 
-section .conteiner-noticias .texto, section .conteiner-noticias .texto1 {
+.conteiner-noticias .texto, .conteiner-noticias .texto1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   font-size: 120%;
@@ -163,7 +169,7 @@ section .conteiner-noticias .texto, section .conteiner-noticias .texto1 {
   background-color: aliceblue;
   display: inline-block;
 }
-.imagen-fondo .h3-especialidades {
+.imagen-fondo h3 {
   text-align: center;
   letter-spacing: 1px;
   color: grey;
@@ -196,13 +202,13 @@ section .conteiner-noticias .texto, section .conteiner-noticias .texto1 {
   }
 }
 
-section .conteiner-noticias .foto1, section .conteiner-noticias .foto {
+.conteiner-noticias .foto1, .conteiner-noticias .foto {
   width: 100%;
   height: auto;
   border: khaki 1px solid;
 }
 
-section .conteiner-noticias .texto, section .conteiner-noticias .texto1 {
+.conteiner-noticias .texto, .conteiner-noticias .texto1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   font-size: 120%;
@@ -212,10 +218,8 @@ section {
   width: 100%;
   background-color: aliceblue;
 }
-section .titulo-noticias {
+section h3 {
   text-align: center;
-}
-section .titulo-noticias h3 {
   letter-spacing: 1px;
   color: grey;
   font-size: 45px;
@@ -224,7 +228,8 @@ section .titulo-noticias h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-top: 2rem;
 }
-section .conteiner-noticias {
+
+.conteiner-noticias {
   width: 100%;
   background-color: aliceblue;
   display: grid;
@@ -235,28 +240,29 @@ section .conteiner-noticias {
   grid-template-areas: "foto texto" "foto1 texto1";
   align-items: center;
 }
-section .conteiner-noticias .foto {
+.conteiner-noticias .foto {
   grid-area: foto;
 }
-section .conteiner-noticias .texto {
+.conteiner-noticias .texto {
   grid-area: texto;
 }
-section .conteiner-noticias .foto1 {
+.conteiner-noticias .foto1 {
   grid-area: foto1;
 }
-section .conteiner-noticias .texto1 {
+.conteiner-noticias .texto1 {
   grid-area: texto1;
 }
-section .conteiner-noticias img {
+.conteiner-noticias img {
   width: 100%;
   height: auto;
   border: khaki 1px solid;
 }
 @media only screen and (max-width: 400px) {
-  section .titulo-noticias h3 {
+  .titulo-noticias h3 {
     font-size: 25px;
   }
-  section .conteiner-noticias {
+
+  .conteiner-noticias {
     width: 100%;
     background-color: aliceblue;
     display: grid;
@@ -267,29 +273,30 @@ section .conteiner-noticias img {
     grid-template-areas: "foto" "texto" "foto1" "texto1";
     align-items: center;
   }
-  section .conteiner-noticias .texto {
+  .conteiner-noticias .texto {
     grid-area: texto;
   }
-  section .conteiner-noticias .foto1 {
+  .conteiner-noticias .foto1 {
     grid-area: foto1;
   }
-  section .conteiner-noticias .texto1 {
+  .conteiner-noticias .texto1 {
     grid-area: texto1;
   }
-  section .conteiner-noticias img {
+  .conteiner-noticias img {
     width: 100%;
     height: auto;
     border: khaki 1px solid;
   }
-  section .conteiner-noticias .texto, section .conteiner-noticias .texto1 {
+  .conteiner-noticias .texto, .conteiner-noticias .texto1 {
     font-size: 70%;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  section .titulo-noticias h3 {
+  .titulo-noticias h3 {
     font-size: 35px;
   }
-  section .conteiner-noticias {
+
+  .conteiner-noticias {
     width: 100%;
     background-color: aliceblue;
     display: grid;
@@ -300,27 +307,26 @@ section .conteiner-noticias img {
     grid-template-areas: "foto" "texto" "foto1" "texto1";
     align-items: center;
   }
-  section .conteiner-noticias .texto {
+  .conteiner-noticias .texto {
     grid-area: texto;
   }
-  section .conteiner-noticias .foto1 {
+  .conteiner-noticias .foto1 {
     grid-area: foto1;
   }
-  section .conteiner-noticias .texto1 {
+  .conteiner-noticias .texto1 {
     grid-area: texto1;
   }
-  section .conteiner-noticias img {
+  .conteiner-noticias img {
     width: 100%;
     height: auto;
     border: khaki 1px solid;
   }
-  section .conteiner-noticias .texto, section .conteiner-noticias .texto1 {
+  .conteiner-noticias .texto, .conteiner-noticias .texto1 {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     text-align: center;
     font-size: 100%;
   }
 }
-
 .contactos-conteiner {
   background-color: aliceblue;
   width: 100%;
@@ -422,13 +428,13 @@ section .conteiner-noticias img {
   }
 }
 
-section .conteiner-noticias .foto, section .conteiner-noticias .foto1 {
+.conteiner-noticias .foto, .conteiner-noticias .foto1 {
   width: 100%;
   height: auto;
   border: khaki 1px solid;
 }
 
-section .conteiner-noticias .texto, section .conteiner-noticias .texto1 {
+.conteiner-noticias .texto, .conteiner-noticias .texto1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   font-size: 120%;

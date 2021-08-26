@@ -5,9 +5,10 @@
 section{
     width: 100%;
     background-color: $bg-main;
-    .titulo-noticias{
-        text-align: center;
+    
+        
         h3{ 
+            text-align: center;
             letter-spacing: 1px;
             color: nth($colores-fuentes, 1);
             font-size: $tamaño-titulo *1;
@@ -135,4 +136,4 @@ section{
      
  }
    }
-    }
+    

@@ -5,9 +5,9 @@
     background-color: $bg-main;
     width: 100%;
     height: 900px;
-    .titulo-contactos{
-    display: flex;
-    justify-content: space-around;
+    .titulo-contactos{ 
+     display: flex;
+     justify-content: space-around;
     h3{
         letter-spacing: 1px;
         color: nth($colores-fuentes, 1);
@@ -17,7 +17,7 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding-top: 2rem; 
     }
-    }
+     }
     .cards-conteiner{
         display: flex;
         justify-content: space-around;
@@ -44,6 +44,7 @@
                 font-weight: 1px;
                 color: nth($colores-fuentes, 1);
                 text-decoration: underline;
+               
             }
             p{
                 text-align: center;
@@ -112,4 +113,4 @@
     }
  }
   }
-   }
+    } 
