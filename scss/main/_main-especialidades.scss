@@ -5,7 +5,7 @@
 
 .imagen-fondo{
     width: 100%;
-    height: 125vh;
+    height: 135vh;
     background-color: $bg-main;
     display: inline-block;
     h1{
@@ -21,22 +21,10 @@
     }
     .lista-especialidades{
         text-align: center;
-        font-size: 1em;
+        font-size: 0.8em;
         color: nth($colores-fuentes, 1);
         list-style: none;
         
-    }
-    
-    @media only screen and (min-width: 427px) and (max-width: 960px) {
-        height: 150vh;
-        display: inline-block;
-       
-         h1{
-             font-size: 1.4em;
-         }
-        .lista-especialidades{
-            font-size: 0.7em;
-        }
     }
     @media only screen and (max-width: 427px) {
         height: 100vh;
@@ -46,10 +34,23 @@
             font-size: 1em;
         }
         .lista-especialidades{
-            font-size: 0.7em;
+            font-size: 0.8em;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        height: 120vh;
+        display: inline-block;
+      
+         h1{
+             font-size: 1.2em;
+         }
+        .lista-especialidades{
+            font-size: 1em;
+            padding-top: 0.3em;
         }
     }
 }
+ 
 
 
 

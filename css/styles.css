@@ -178,7 +178,7 @@ section h3 {
 
 .imagen-fondo {
   width: 100%;
-  height: 125vh;
+  height: 135vh;
   background-color: aliceblue;
   display: inline-block;
 }
@@ -194,21 +194,9 @@ section h3 {
 }
 .imagen-fondo .lista-especialidades {
   text-align: center;
-  font-size: 1em;
+  font-size: 0.8em;
   color: grey;
   list-style: none;
-}
-@media only screen and (min-width: 427px) and (max-width: 960px) {
-  .imagen-fondo {
-    height: 130vh;
-    display: inline-block;
-  }
-  .imagen-fondo h1 {
-    font-size: 1.4em;
-  }
-  .imagen-fondo .lista-especialidades {
-    font-size: 1em;
-  }
 }
 @media only screen and (max-width: 427px) {
   .imagen-fondo {
@@ -219,7 +207,20 @@ section h3 {
     font-size: 1em;
   }
   .imagen-fondo .lista-especialidades {
-    font-size: 0.7em;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .imagen-fondo {
+    height: 120vh;
+    display: inline-block;
+  }
+  .imagen-fondo h1 {
+    font-size: 1.2em;
+  }
+  .imagen-fondo .lista-especialidades {
+    font-size: 1em;
+    padding-top: 0.3em;
   }
 }
 
