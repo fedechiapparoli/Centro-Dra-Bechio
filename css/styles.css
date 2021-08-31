@@ -24,34 +24,36 @@ header .nav-css a {
 }
 header .nav-css .logo-logo {
   width: 70px;
+  margin-left: 4em;
 }
 
 .footer-1 {
   background-color: #ece6df;
   width: 100%;
+}
+.footer-1 .footer-flex {
   display: flex;
   justify-content: space-around;
 }
+.footer-1 ul {
+  text-decoration: none;
+  list-style: none;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 0.5em;
+}
 .footer-1 .logo-footer .logo-logo {
-  width: 70px;
+  width: 3em;
+  margin-top: 1em;
 }
 .footer-1 .parrafo-footer {
   color: black;
-  font-size: 100%;
-  text-align: center;
-  margin: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  display: flex;
-  margin-top: 2em;
-}
-.footer-1 .redes-sociales {
-  display: flex;
-  justify-content: space-around;
 }
 .footer-1 .redes-sociales .logo-redes {
-  width: 30px;
-  height: 30px;
-  margin: 20px;
+  width: 1.8em;
+  margin-left: 1em;
+  margin-top: 1.3em;
 }
 .footer-1 .redes-sociales .logo-redes:hover {
   transform: translateY(-2px) scale(1.2);
@@ -64,12 +66,25 @@ header .nav-css .logo-logo {
   -o-transition: 1.5s;
 }
 @media only screen and (max-width: 400px) {
-  .footer-1 .parrafo-footer {
-    font-size: 50%;
+  .footer-1 .footer-flex {
+    width: 100%;
+    display: block;
+    text-align: center;
   }
-  .footer-1 .logo-logo {
-    width: 20%;
-    margin-left: 10px;
+  .footer-1 .footer-flex .logo-footer {
+    width: 100%;
+  }
+  .footer-1 .footer-flex .parrafo-footer {
+    font-size: 0.7em;
+  }
+  .footer-1 .footer-flex .redes-sociales {
+    width: 100%;
+    align-items: flex-end;
+  }
+  .footer-1 .footer-flex .redes-sociales .logo-redes {
+    width: 1.5em;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -92,7 +107,7 @@ section h3 {
   text-align: center;
   letter-spacing: 1px;
   color: grey;
-  font-size: 45px;
+  font-size: 2.5em;
   text-decoration: underline;
   background-color: aliceblue;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -118,6 +133,7 @@ section h3 {
   margin-left: 1.5em;
 }
 .nosotros-parrafo h1 {
+  text-decoration: none;
   letter-spacing: 1px;
   font-size: 100%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -125,11 +141,10 @@ section h3 {
 }
 
 @media only screen and (max-width: 960px) {
-  .titulo-nosotros h3 {
-    font-size: 25px;
+  section h3 {
+    font-size: 2em;
   }
-
-  .grid-conteiner {
+  section .grid-conteiner {
     margin: 0 auto;
     padding: 40px;
     display: grid;
@@ -137,17 +152,15 @@ section h3 {
     grid-template-rows: auto;
     gap: 20px;
   }
-
-  .grid-item img {
+  section .grid-item img {
     width: 100%;
     height: auto;
   }
-
-  .nosotros-parrafo {
+  section .nosotros-parrafo {
     width: 100%;
+    margin: auto;
   }
-
-  .nosotros-parrafo p {
+  section .nosotros-parrafo p {
     font-size: 70%;
   }
 }
@@ -165,15 +178,15 @@ section h3 {
 
 .imagen-fondo {
   width: 100%;
-  height: 130vh;
+  height: 125vh;
   background-color: aliceblue;
   display: inline-block;
 }
-.imagen-fondo h3 {
+.imagen-fondo h1 {
   text-align: center;
   letter-spacing: 1px;
   color: grey;
-  font-size: 45px;
+  font-size: 2.5em;
   text-decoration: underline;
   background-color: aliceblue;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -181,24 +194,32 @@ section h3 {
 }
 .imagen-fondo .lista-especialidades {
   text-align: center;
-  font-size: 120%;
+  font-size: 1em;
   color: grey;
   list-style: none;
 }
-@media only screen and (max-width: 400px) {
-  .imagen-fondo .h3-especialidades {
-    font-size: 90%;
+@media only screen and (min-width: 427px) and (max-width: 960px) {
+  .imagen-fondo {
+    height: 130vh;
+    display: inline-block;
+  }
+  .imagen-fondo h1 {
+    font-size: 1.4em;
   }
   .imagen-fondo .lista-especialidades {
-    font-size: 70%;
+    font-size: 1em;
   }
 }
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .imagen-fondo .h3-especialidades {
-    font-size: 120%;
+@media only screen and (max-width: 427px) {
+  .imagen-fondo {
+    height: 100vh;
+    display: inline-block;
+  }
+  .imagen-fondo h1 {
+    font-size: 1em;
   }
   .imagen-fondo .lista-especialidades {
-    font-size: 65%;
+    font-size: 0.7em;
   }
 }
 
@@ -218,11 +239,11 @@ section {
   width: 100%;
   background-color: aliceblue;
 }
-section h3 {
+section h1 {
   text-align: center;
   letter-spacing: 1px;
   color: grey;
-  font-size: 45px;
+  font-size: 2.5em;
   text-decoration: underline;
   background-color: aliceblue;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -257,12 +278,11 @@ section h3 {
   height: auto;
   border: khaki 1px solid;
 }
-@media only screen and (max-width: 400px) {
-  .titulo-noticias h3 {
-    font-size: 25px;
+@media only screen and (max-width: 960px) {
+  section h1 {
+    font-size: 1.8em;
   }
-
-  .conteiner-noticias {
+  section .conteiner-noticias {
     width: 100%;
     background-color: aliceblue;
     display: grid;
@@ -273,58 +293,21 @@ section h3 {
     grid-template-areas: "foto" "texto" "foto1" "texto1";
     align-items: center;
   }
-  .conteiner-noticias .texto {
+  section .conteiner-noticias .texto {
     grid-area: texto;
+    font-size: 1em;
   }
-  .conteiner-noticias .foto1 {
+  section .conteiner-noticias .foto1 {
     grid-area: foto1;
   }
-  .conteiner-noticias .texto1 {
+  section .conteiner-noticias .texto1 {
     grid-area: texto1;
+    font-size: 1em;
   }
-  .conteiner-noticias img {
+  section .conteiner-noticias img {
     width: 100%;
     height: auto;
     border: khaki 1px solid;
-  }
-  .conteiner-noticias .texto, .conteiner-noticias .texto1 {
-    font-size: 70%;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .titulo-noticias h3 {
-    font-size: 35px;
-  }
-
-  .conteiner-noticias {
-    width: 100%;
-    background-color: aliceblue;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 20px 20px;
-    padding: 60px;
-    grid-template-areas: "foto" "texto" "foto1" "texto1";
-    align-items: center;
-  }
-  .conteiner-noticias .texto {
-    grid-area: texto;
-  }
-  .conteiner-noticias .foto1 {
-    grid-area: foto1;
-  }
-  .conteiner-noticias .texto1 {
-    grid-area: texto1;
-  }
-  .conteiner-noticias img {
-    width: 100%;
-    height: auto;
-    border: khaki 1px solid;
-  }
-  .conteiner-noticias .texto, .conteiner-noticias .texto1 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    text-align: center;
-    font-size: 100%;
   }
 }
 .contactos-conteiner {
@@ -336,10 +319,10 @@ section h3 {
   display: flex;
   justify-content: space-around;
 }
-.contactos-conteiner .titulo-contactos h3 {
+.contactos-conteiner .titulo-contactos h1 {
   letter-spacing: 1px;
   color: grey;
-  font-size: 45px;
+  font-size: 2.5em;
   text-decoration: underline;
   background-color: aliceblue;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -352,7 +335,7 @@ section h3 {
   width: 100%;
 }
 .contactos-conteiner .cards-conteiner .cards {
-  width: 100%;
+  width: 80%;
   height: 240px;
   margin: 20px;
   border-radius: 5px;
@@ -368,19 +351,20 @@ section h3 {
 }
 .contactos-conteiner .cards-conteiner .cards h3 {
   text-align: center;
-  font-size: 150%;
+  font-size: 1.5em;
   font-weight: 1px;
   color: grey;
   text-decoration: underline;
+  background-color: #ece6df;
 }
 .contactos-conteiner .cards-conteiner .cards p {
   text-align: center;
-  font-size: 120%;
+  font-size: 0.8;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: grey;
 }
-@media only screen and (max-width: 400px) {
-  .contactos-conteiner .titulo-contactos h3 {
+@media only screen and (max-width: 460px) {
+  .contactos-conteiner .titulo-contactos h1 {
     font-size: 25px;
   }
   .contactos-conteiner .cards-conteiner {
@@ -390,35 +374,11 @@ section h3 {
   }
   .contactos-conteiner .cards-conteiner .cards {
     width: 85%;
-    height: 150px;
+    height: auto;
   }
   .contactos-conteiner .cards-conteiner .cards img {
     width: 60px;
-    height: auto;
-  }
-  .contactos-conteiner .cards-conteiner .cards h3 {
-    font-size: 100%;
-  }
-  .contactos-conteiner .cards-conteiner .cards p {
-    font-size: 90%;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .contactos-conteiner .titulo-contactos h3 {
-    font-size: 35px;
-  }
-  .contactos-conteiner .cards-conteiner {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-  .contactos-conteiner .cards-conteiner .cards {
-    width: 90%;
-    height: 150px;
-  }
-  .contactos-conteiner .cards-conteiner .cards img {
-    width: 60px;
-    height: auto;
+    height: 100px;
   }
   .contactos-conteiner .cards-conteiner .cards h3 {
     font-size: 100%;
@@ -443,7 +403,8 @@ section h3 {
 section .parrafo-section {
   display: inline-block;
 }
-section .parrafo-section p {
+section .parrafo-section h1 {
+  text-decoration: none;
   margin: 20px;
   padding: 20px;
   color: #2f2c35;
@@ -499,7 +460,7 @@ section .parrafo-section p {
   }
 }
 @media only screen and (max-width: 400px) {
-  section .parrafo-section p {
+  section .parrafo-section h1 {
     font-size: 60%;
     margin: 10px;
   }

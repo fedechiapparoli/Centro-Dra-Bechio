@@ -33,7 +33,7 @@ section{
         display: flex;
     align-items: center;
     margin-left: 1.5em;
-    h1{
+    h1{ text-decoration: none;
         letter-spacing: 1px;
         font-size: 100%;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -41,11 +41,11 @@ section{
     }
     }
     @media only screen and (max-width: 960px) {
-        .titulo-nosotros{
+        section{
             h3{
-                font-size: 25px;
+                font-size: 2em;
             }
-        }
+        
         .grid-conteiner {
             margin: 0 auto;
             padding: 40px;
@@ -62,36 +62,11 @@ section{
         }
         .nosotros-parrafo{
             width: 100%;
+            margin: auto;
         }
         .nosotros-parrafo p{
         font-size: 70%;
         }  
    }
-//    @media only screen and (min-width: 401px) and (max-width: 960px){
-//        .titulo-nosotros{
-//            h3{
-//                font-size: 35px;
-//            }
-//        }
-//     .grid-conteiner {
-//         margin: 0 auto;
-//         padding: 40px;
-//         display: grid;
-//         grid-template-columns: 1fr;
-//         grid-template-rows: auto;
-//         gap: 1.4em;
-//     }
-//     .grid-item img{
-//         width: 100%;
-//         height: auto;
-        
 
-//     }
-//     .nosotros-parrafo{
-//         width: 100%;
-//     }
-//     .nosotros-parrafo p{
-//     font-size: 70%;
-//     }  
-//    }
-    
+     }

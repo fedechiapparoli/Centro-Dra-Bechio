@@ -3,27 +3,34 @@
 .footer-1 {
     background-color: $bg-colorfh;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+   .footer-flex{ 
+        display: flex;
+        justify-content: space-around;
+     }
+     ul{
+        text-decoration: none;
+        list-style: none;
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 0.5em;
+    
+     }
     .logo-footer{
         .logo-logo{
-            width: 70px;
+            width: 3em;
+            margin-top: 1em;
         }
     }
     .parrafo-footer{
         color: nth($colores-fuentes, 2);
-        font-size: 100%;
-        text-align: center;
-        margin: 10px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: flex;
-        margin-top: 2em;
+        
+        
     
     }
     .redes-sociales{
        
-        display: flex;
-        justify-content: space-around;
+       
         .logo-redes{
             &:hover{
                 transform: translateY(-2px) scale(1.2);
@@ -36,20 +43,39 @@
         -o-transition: 1.5s;
         
             }
-            width: 30px;
-    height: 30px;
-    margin: 20px;
+            width: 1.8em;
+            margin-left: 1em;
+            margin-top: 1.3em;
+    
 
         }
     }
     @media only screen and (max-width: 400px) {
-        .parrafo-footer{
-            font-size: 50%;
-        } 
-        .logo-logo{
-            width: 20%;
-            margin-left: 10px;
+        .footer-flex{
+            width: 100%;
+            display: block;
+            text-align: center;
+            .logo-footer{
+                width: 100%;
+            }
+            .parrafo-footer{
+                font-size: 0.7em;
+            }
+            .redes-sociales{
+                width: 100%;
+                align-items: flex-end;
+            
+                .logo-redes{
+                    width: 1.5em;
+                    margin-top: 0em;
+                    margin-bottom: 0.5em;
+                }
+                
+                }
+            }
         }
+        
+             
 
+        
     }
-}

@@ -8,7 +8,7 @@
     .titulo-contactos{ 
      display: flex;
      justify-content: space-around;
-    h3{
+    h1{
         letter-spacing: 1px;
         color: nth($colores-fuentes, 1);
         font-size: $tamaño-titulo *1;
@@ -24,7 +24,7 @@
         align-items: center;
         width: 100%;
         .cards{
-            width: 100%;
+            width: 80%;
             height: 240px;
             margin: 20px;
             border-radius: 5px;
@@ -36,27 +36,29 @@
                 width: 90px;
                 height: auto;
                 color: nth($colores-fuentes, 1);
-            }
             
+             }
             h3{
                 text-align: center;
-                font-size: 150%;
+                font-size: 1.5em;
                 font-weight: 1px;
                 color: nth($colores-fuentes, 1);
                 text-decoration: underline;
+                background-color:$bg-colorfh ;
                
             }
             p{
                 text-align: center;
-                font-size: 120%;
+                font-size: 0.8;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 color: nth($colores-fuentes, 1);
             }
         }
     }
-    @media only screen and (max-width: 400px) {
+     
+    @media only screen and (max-width: 460px) {
         .titulo-contactos{
-            h3{
+            h1{
                 font-size: 25px;
             }
         }
@@ -66,16 +68,18 @@
             grid-template-rows: auto;
             .cards{
                 width: 85%;
-                height: 150px;
+                height: auto;
+                
                 img{
                     width: 60px;
-                    height: auto;
+                    height: 100px;
                 }
                 h3{
                     font-size: 100%;
                 }
                 p{
                     font-size: 90%;
+                    
                 }
             }
            
@@ -86,31 +90,7 @@
 
         }
     }
-    @media only screen and (min-width: 401px) and (max-width: 960px) {
-        .titulo-contactos{
-            h3{
-                font-size: 35px;
-            }
-        }
-        .cards-conteiner{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-          
-            .cards{
-                width: 90%;
-                height: 150px;
-                img{
-                    width: 60px;
-                    height: auto;
-                }
-                h3{
-                    font-size: 100%;
-                }
-                p{
-                    font-size: 90%;
-                }
-    }
+   
  }
-  }
-    } 
+  
+    
