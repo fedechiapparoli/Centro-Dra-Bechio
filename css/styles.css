@@ -13,7 +13,6 @@ header .nav-css {
 header .nav-css li:hover {
   background-color: #e9d7d7;
   color: black;
-  /* padding: 10px; */
   border-radius: 10px;
   transition: 1.5s;
 }
@@ -23,7 +22,8 @@ header .nav-css a {
   text-transform: uppercase;
 }
 header .nav-css .logo-logo {
-  width: 70px;
+  width: 4.3em;
+  height: 4.3em;
   margin-left: 4em;
 }
 
@@ -52,6 +52,7 @@ header .nav-css .logo-logo {
 }
 .footer-1 .redes-sociales .logo-redes {
   width: 1.8em;
+  height: 1.8em;
   margin-left: 1em;
   margin-top: 1.3em;
 }
@@ -161,11 +162,11 @@ section h3 {
   }
   section .grid-conteiner {
     margin: 0 auto;
-    padding: 40px;
+    padding: 2.5em;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 20px;
+    gap: 1.25em;
   }
   section .grid-item img {
     width: 100%;
@@ -334,10 +335,13 @@ section h1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 20px 20px;
-    padding: 60px;
+    gap: 1.25em 1.25em;
+    padding: 3.75em;
     grid-template-areas: "foto" "texto" "foto1" "texto1";
     align-items: center;
+  }
+  section .conteiner-noticias .foto {
+    grid-area: foto;
   }
   section .conteiner-noticias .texto {
     grid-area: texto;
@@ -397,7 +401,7 @@ section h1 {
 }
 .contactos-conteiner .cards-conteiner .cards {
   width: 80%;
-  height: 240px;
+  height: 15em;
   margin: 20px;
   border-radius: 5px;
   overflow: hidden;
@@ -406,7 +410,7 @@ section h1 {
 .contactos-conteiner .cards-conteiner .cards .cards-image {
   display: block;
   margin: auto;
-  width: 90px;
+  width: 5.6em;
   height: auto;
   color: grey;
 }
@@ -438,8 +442,8 @@ section h1 {
     height: auto;
   }
   .contactos-conteiner .cards-conteiner .cards img {
-    width: 60px;
-    height: 100px;
+    width: 3.75em;
+    height: 6.25em;
   }
   .contactos-conteiner .cards-conteiner .cards h3 {
     font-size: 100%;

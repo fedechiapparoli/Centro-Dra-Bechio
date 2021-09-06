@@ -87,12 +87,15 @@ section{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        gap: 20px 20px;
-        padding: 60px;
+        gap: 1.25em 1.25em;
+        padding: 3.75em;
         grid-template-areas: 
         "foto" "texto"
         "foto1" "texto1";
         align-items: center;
+        .foto{
+            grid-area: foto;
+        }
         .texto{
             grid-area: texto;
             font-size: 1em;

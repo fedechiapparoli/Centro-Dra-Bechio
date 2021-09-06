@@ -43,7 +43,7 @@
         width: 100%;
         .cards{
             width: 80%;
-            height: 240px;
+            height: 15em;
             margin: 20px;
             border-radius: 5px;
             overflow: hidden;
@@ -51,7 +51,7 @@
             .cards-image{
                 display: block;
                 margin: auto;
-                width: 90px;
+                width: 5.6em;
                 height: auto;
                 color: nth($colores-fuentes, 1);
             
@@ -89,8 +89,8 @@
                 height: auto;
                 
                 img{
-                    width: 60px;
-                    height: 100px;
+                    width: 3.75em;
+                    height: 6.25em;
                 }
                 h3{
                     font-size: 100%;

@@ -7,7 +7,6 @@ header{
             &:hover{
                 background-color: rgb(233, 215, 215);
                 color: black;
-                /* padding: 10px; */
                 border-radius: 10px;
                 transition: 1.5s;
             }
@@ -20,7 +19,8 @@ header{
                
         }
         .logo-logo{
-            width: 70px;
+            width: 4.3em;
+            height: 4.3em;
             margin-left: 4em;
         }
     }
