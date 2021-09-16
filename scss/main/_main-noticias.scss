@@ -5,6 +5,7 @@
 section{
     width: 100%;
     background-color: $bg-main;
+    /* Boton wps */
     .boton-wps{
         img{
             position: fixed;
@@ -23,7 +24,7 @@ section{
         }
     }
     
-        
+        /* Título */
         h1{ 
             text-align: center;
             letter-spacing: 1px;
@@ -35,6 +36,7 @@ section{
             padding-top: 2rem; 
          }
     }
+    /* Imágenes y noticias */
     .conteiner-noticias{
         width: 100%;
         background-color: aliceblue;
@@ -70,52 +72,45 @@ section{
             @extend %texto-noticias
         }
         
-      
-    }
-    
-   
-
- @media only screen and (max-width: 960px) {
-     section{
-        h1{
-            font-size: 1.8em;
-        }
+      } 
      
-    .conteiner-noticias{
-        width: 100%;
-        background-color: aliceblue;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 1.25em 1.25em;
-        padding: 3.75em;
-        grid-template-areas: 
-        "foto" "texto"
-        "foto1" "texto1";
-        align-items: center;
-        .foto{
+ @media only screen and (max-width: 960px) { 
+    section{
+             h1{
+                font-size: 1.8em;
+             }
+
+     .conteiner-noticias{
+                          width: 100%;
+                          background-color: aliceblue;
+                          display: grid;
+                          grid-template-columns: 1fr;
+                          grid-template-rows: auto;
+                          gap: 1.25em 1.25em;
+                          padding: 3.75em;
+                          grid-template-areas: 
+                          "foto" "texto"
+                          "foto1" "texto1";
+                          align-items: center;
+     .foto{
             grid-area: foto;
-        }
-        .texto{
+          }
+     .texto{
             grid-area: texto;
             font-size: 1em;
-        }
-        .foto1{
+          }
+     .foto1{
             grid-area: foto1;
-        }
-        .texto1{
+          }
+     .texto1{
             grid-area: texto1;
             font-size: 1em;
-        }
-        img{
+          }
+     img{
             width: 100%;
             height: auto;
             border: khaki 1px solid;
-        }
-        
-       
-     
+         }
+}
  }
-   }
- }
-    
+    }

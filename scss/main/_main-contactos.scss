@@ -2,6 +2,7 @@
 @import "../base/listas";
 @import "../base/operadores";
 .contactos-conteiner{
+    /* boton wps*/
     .boton-wps{
         img{
             position: fixed;
@@ -26,6 +27,7 @@
     .titulo-contactos{ 
      display: flex;
      justify-content: space-around;
+     /* Titulo */
     h1{
         letter-spacing: 1px;
         color: nth($colores-fuentes, 1);
@@ -36,6 +38,7 @@
         padding-top: 2rem; 
     }
      }
+     /* Cards */
     .cards-conteiner{
         display: flex;
         justify-content: space-around;
@@ -44,9 +47,9 @@
         .cards{
             width: 80%;
             height: 15em;
-            margin: 20px;
+            margin: 0.8em;
             border-radius: 5px;
-            overflow: hidden;
+           overflow: hidden;
             background-color: rgb(236, 230, 223);
             .cards-image{
                 display: block;
@@ -73,8 +76,9 @@
             }
         }
     }
+     /* Media query*/
      
-    @media only screen and (max-width: 460px) {
+    @media only screen and (max-width: 320px) {
         .titulo-contactos{
             h1{
                 font-size: 25px;
@@ -84,9 +88,47 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
+        
             .cards{
-                width: 85%;
+                width: 80%;
                 height: auto;
+               margin: 1.8em;
+                
+                img{
+                    width: 3.75em;
+                    height: 6.25em;
+                }
+                h3{
+                    font-size: 100%;
+                }
+                p{
+                    font-size: 90%;
+                    
+                }
+            }
+           
+           
+            
+           
+           
+
+        }
+    }
+    @media only screen and (min-width: 321px) and (max-width: 460px) {
+        .titulo-contactos{
+            h1{
+                font-size: 1.5em;
+            }
+        }
+        .cards-conteiner{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        
+            .cards{
+                width: 80%;
+                height: auto;
+               margin: 2.6em;
                 
                 img{
                     width: 3.75em;
@@ -109,6 +151,6 @@
         }
     }
    
- }
+}
   
     

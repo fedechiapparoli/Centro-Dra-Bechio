@@ -1,7 +1,7 @@
 {
   "name": "trabajo-final",
   "version": "1.0.0",
-  "description": "trabajo final",
+  "description": "trabajo final coder house para centro médico de ecografia para un futuro próximo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
